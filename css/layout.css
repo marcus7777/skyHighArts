@@ -1,0 +1,116 @@
+@font-face{font-family:'LinotypeZapfino One';font-style:normal;font-weight:400;src:local('LinotypeZapfino One'),local('LTZapfinoOne-Regular'),url(lino.woff) format('woff'),url(lino.ttf) format('truetype');}
+
+h1,h2,h3,h4,h5,h6,#block-sha-branding {
+  text-align: center;
+  color: #500e47;
+  text-shadow: 0 0 4px rgba(255,255,255,1);
+  font-family: 'LinotypeZapfino One',Times New Roman,Serif;
+  font-size: 53px;
+  clear: both;
+}
+#block-sha-branding a {
+  color: #500e47;
+  text-shadow: 0 0 4px rgba(255,255,255,1);
+  font-weight: 700;
+  font-size: 60px;
+  text-decoration: none;
+}
+#block-sha-branding img {
+  max-width: 45%;
+}
+body {
+  font-family: ariel;
+  text-shadow: 0 0 4px rgba(255,255,255,1);
+  font-size: 1.4em;
+  font-weight: 100;
+  opacity: 1;
+  transition: 1s opacity;
+}
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
+img {
+  max-width:100%;
+}
+main {
+  max-width: 75%;
+  margin-left: 12.5%;
+}
+main img {
+  border-radius: 50%;
+  margin-top: 0.33em;
+  -webkit-shape-outside: circle(50%);
+  shape-outside: circle(50%);
+  clip-path: circle(42% at 50%);
+}
+
+/**
+ * Visual styles for tabs.
+ */
+
+ul.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs a {
+  border-radius: 50%;
+}
+
+
+.menu > li {
+  display: inline-block;
+}
+nav#block-sha-main-menu ul.menu{
+    justify-content: space-evenly;
+    display: flex;
+}
+nav#block-sha-main-menu a {
+  font-family: "LinotypeZapfino One", "Times New Roman", serif;
+  font-weight: 900;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 10px #ffeaea;
+  background-image: url(cloud.png);
+  background-repeat: round;
+  padding: 25px;
+  font-size: xx-large;
+  margin-bottom: 50px;
+  margin-top: -50px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+nav#block-sha-main-menu a.is-active,
+nav#block-sha-main-menu a:hover {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* unvisited link */
+a:link {
+  color: #500e47;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #500e47;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #500e47;
+}
+
+/* selected link */
+a:active {
+  color: #500e47;
+  text-decoration: none;
+}

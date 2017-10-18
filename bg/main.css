@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+  min-height: 100vh;
+  background-image: url(clouds.png);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 34%;
+}
+body.daytime {
+  background-image: url(daysky.jpg);
+}
+body.nighttime {
+  background-image: url(daysky.jpg);
+  background-position-y: 20%;
+}
+canvas {
+  top: 0;
+  position: absolute;
+  left: 0;
+  z-index: -100;
+}
