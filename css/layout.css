@@ -25,7 +25,12 @@ body {
   font-weight: 100;
   opacity: 1;
   transition: 1s opacity;
+  background-image:linear-gradient(rgba(0,0,0,0), #fff 600px);
 }
+body.notMobile {
+  background-image: none;
+}
+
 body.fade-out {
   opacity: 0;
   transition: none;
@@ -43,6 +48,7 @@ main img {
   -webkit-shape-outside: circle(50%);
   shape-outside: circle(50%);
   clip-path: circle(42% at 50%);
+  clear: left;
 }
 
 /**
@@ -75,7 +81,7 @@ nav#block-sha-main-menu a {
   text-decoration: none;
   letter-spacing: 1px;
   text-shadow: 1px 2px 10px #ffeaea;
-  background-image: url(cloud.png);
+  background-image: url(ball.gif);
   background-repeat: round;
   padding: 25px;
   font-size: xx-large;
